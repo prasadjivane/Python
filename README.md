@@ -1,2 +1,2 @@
 # Python
-Python Basics With Snippets
+Python Project

@@ -9,6 +9,11 @@ async def root():
     return {"message": "Hello Prasad"}
 
 
+@app.get("/test")
+async def test():
+    return {"message": "Test Worked"}
+
+
 @app.get("/add/str1")
 async def add(str1):
     en = str1

@@ -1,22 +1,21 @@
-import uvicorn
 from fastapi import FastAPI
-
+import uvicorn
 
 app = FastAPI()
 
 
 @app.get("/")
-async def root():
+def root():
     return {"message": "Hello Prasad"}
 
 
 @app.get("/test")
-async def test():
+def test():
     return {"message": "Test Worked"}
 
 
 @app.get("/add/str1")
-async def add(str1):
+def add(str1):
     en = str1
     return {"Entered Value": en}
 
